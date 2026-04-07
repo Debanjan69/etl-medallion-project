@@ -1,2 +1,21 @@
-# etl-medallion-project
-End-to-end ETL pipeline using Azure Data Factory, Databricks, and ADLS with Medallion Architecture (Bronze–Silver–Gold). Implements data ingestion, PySpark transformations, aggregations, incremental loads, and SCD handling. Designed with modular, config-driven structure for scalable data processing.
+# ETL Medallion Architecture Project
+
+## Overview
+This project demonstrates an end-to-end ETL pipeline using:
+- Azure Data Factory
+- Azure Databricks
+- ADLS Gen2
+
+## Architecture
+Bronze → Silver → Gold
+
+## Features
+- Incremental Load
+- SCD Type 2
+- Partitioning
+- Modular Code Design
+
+## Tech Stack
+- PySpark
+- SQL
+- Azure Cloud
