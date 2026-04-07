@@ -5,7 +5,7 @@ from src.utils.spark_session import get_spark_session
 from src.config_reader import read_config
 import os
 
-def transform_to_gold(top_n==5):
+def transform_to_gold(top_n=5):
     spark = get_spark_session()
     config = read_config()
 
