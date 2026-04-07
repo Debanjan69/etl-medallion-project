@@ -8,3 +8,7 @@ def read_config(path=None):
         path = os.path.join(repo_path, "config", "config.yaml")
     with open(path, "r") as f:
         return yaml.safe_load(f)
+
+def get_input_file():
+    config = read_config()
+    return config["files"]["input_file"]
