@@ -1,1 +1,17 @@
-
+{
+  "name": "ETL_Pipeline",
+  "activities": [
+    {
+      "name": "Bronze Ingestion",
+      "type": "DatabricksNotebook"
+    },
+    {
+      "name": "Silver Transformation",
+      "type": "DatabricksNotebook"
+    },
+    {
+      "name": "Gold Aggregation",
+      "type": "DatabricksNotebook"
+    }
+  ]
+}
