@@ -6,7 +6,7 @@ def standardize_columns(df):
         df = df.withColumnRenamed(col, col.lower())
     
     # 2️⃣ Remove duplicate rows
-    df = df.dropDuplicates()
+    df = df.dropDuplicates().dropna()
     
     # 3️⃣ Add ingestion date column
     df = df.withColumn("ingestion_date", current_date())
