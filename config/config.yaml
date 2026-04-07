@@ -1,13 +1,12 @@
 storage_account: etlstorageproject
-
 paths:
-  raw: /mnt/data/raw/
-  bronze: /mnt/data/bronze/
-  silver: /mnt/data/silver/
-  gold: /mnt/data/gold/
+  raw: "/Workspace/Repos/dynamodebanjanuchiha@gmail.com/etl-medallion-project/data/raw/"
+  bronze: "/Workspace/Repos/dynamodebanjanuchiha@gmail.com/etl-medallion-project/data/bronze/"
+  silver: "/Workspace/Repos/dynamodebanjanuchiha@gmail.com/etl-medallion-project/data/silver/"
+  gold: "/Workspace/Repos/dynamodebanjanuchiha@gmail.com/etl-medallion-project/data/gold/"
 
 files:
-  input_file: customers01.csv
+  input_file: customers.csv
 
 columns:
   drop_columns: ["temp_col"]
