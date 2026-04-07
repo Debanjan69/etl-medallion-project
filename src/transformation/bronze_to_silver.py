@@ -35,6 +35,4 @@ def transform_to_silver():
         .save(config["paths"]["silver"])
 
     print("✅ Silver layer transformation complete")
-
-if __name__ == "__main__":
-    transform_to_silver()
+    return df
