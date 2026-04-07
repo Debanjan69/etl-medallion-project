@@ -1,13 +1,17 @@
 storage_account: etlstorageproject
 
 paths:
-  raw: /mnt/raw/
-  bronze: /mnt/bronze/raw/
-  silver: /mnt/silver/clean/
-  gold: /mnt/gold/
+  raw: /mnt/data/raw/
+  bronze: /mnt/data/bronze/
+  silver: /mnt/data/silver/
+  gold: /mnt/data/gold/
 
 files:
-  input_files: ["customers01.csv","sales01.csv","products01.csv"]
-  
-file_format: parquet
+  input_file: customers01.csv
+
+columns:
+  drop_columns: ["temp_col"]
+
+business:
+  aggregation_column: department
   
