@@ -1,1 +1,8 @@
+storage_account: etlstorageproject
 
+paths:
+  bronze: /mnt/bronze/
+  silver: /mnt/silver/
+  gold: /mnt/gold/
+file_format: parquet
+  
