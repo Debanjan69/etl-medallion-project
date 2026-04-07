@@ -1,4 +1,5 @@
 from pyspark.sql.functions import current_date
+from pyspark.sql.functions import initcap
 
 def standardize_columns(df):
     # 1️⃣ Standardize column names
@@ -11,4 +12,10 @@ def standardize_columns(df):
     # 3️⃣ Add ingestion date column
     df = df.withColumn("ingestion_date", current_date())
     
+    return df
+
+
+def to_upper(df):
+    for c in df.columns:
+        df = df.withColumn(c, initcap(col(c)))
     return df
